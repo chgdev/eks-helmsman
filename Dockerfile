@@ -16,7 +16,4 @@ RUN pip install --no-cache awscli && \
 
 USER helm
 
-RUN helm init --client-only && \
-    wget -O- https://github.com/databus23/helm-diff/releases/download/${HELM_DIFF_VERSION}/helm-diff-linux.tgz | tar -xvzC ${HELM_HOME}/plugins
-
 ENTRYPOINT /bin/bash

@@ -1,4 +1,4 @@
-FROM praqma/helmsman:latest as helm
+FROM praqma/helmsman:v3.4.2-helm-v3.2.1 as helm
 FROM gcr.io/heptio-images/authenticator:v0.3.0-scratch as authenticator
 FROM python:3.7-alpine
 
